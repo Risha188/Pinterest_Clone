@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+  <div class="w-full h-screen bg-[url('/images/hero.png')] bg-contain bg-center flex items-center justify-center">
+    <div class="w-[25vw] bg-white px-20 py-10 rounded-[30px]">
+      <i class="fa-brands fa-pinterest flex items-center justify-center text-4xl text-red-600"></i>
+      <h1 class="text-2xl mb-5 text-center font-semibold text-zinc-800 mt-3 leading-none tracking-tighter capitalize">Welcome to pinterest</h1>
+      <form action="/login" method="post">
+        <input class="border-2 rounded-md block mt-3 w-full px-3 py-2" type="text" name="username" placeholder="usernsme">
+        <input class="border-2 rounded-md block mt-3 w-full px-3 py-2" type="password" name="password" placeholder="password">
+        <input class="border-2 rounded-full block mt-3 w-full px-3 py-2 bg-red-600 text-white cursor-pointer font-semibold" type="submit" value="Login">
+        <a href="#" class="flex justify-center mt-3 text-blue-800 font-semibold">Forgot Password?</a>
+        <p class="text-xs font-semibold flex mx-auto mt-3 w-3/4 text-center">By continuing, you agree to Pinterest's Terms of Services;Opens a new tab and 
+        acknowledge that you have read our Privacy Policy Notice at collection</p>
+        <a href="/register" class="text-xs  inline-block font-semibold text-zinc-700 mt-7 flex justify-center">Don't have an account?</a>
+      </form>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>
